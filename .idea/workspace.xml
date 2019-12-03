@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="905481a2-6cb0-4100-9b82-4ceda45495b5" name="Default Changelist" comment="" />
+    <list default="true" id="905481a2-6cb0-4100-9b82-4ceda45495b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/day1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day01/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/day1/FuelCounterUpper.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/day01/FuelCounterUpper.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/day1/FuelCounterUpperTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/day01/FuelCounterUpperTest.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +131,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3150651082202" />
         <entry key="$PROJECT_DIR$/build.sbt" value="2271960595" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1134086237" />
       </map>
@@ -178,29 +184,45 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2485" y="302" width="495" height="513" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575324389250" />
-    <state width="1354" height="260" key="GridCell.Tab.0.bottom" timestamp="1575325165208">
+    <state width="1354" height="260" key="GridCell.Tab.0.bottom" timestamp="1575407863536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575325165208" />
-    <state width="1354" height="260" key="GridCell.Tab.0.center" timestamp="1575325165207">
+    <state width="1354" height="260" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407863536" />
+    <state width="1354" height="260" key="GridCell.Tab.0.center" timestamp="1575407863536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575325165207" />
-    <state width="1354" height="260" key="GridCell.Tab.0.left" timestamp="1575325165207">
+    <state width="1354" height="260" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407863536" />
+    <state width="1354" height="260" key="GridCell.Tab.0.left" timestamp="1575407863536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575325165207" />
-    <state width="1354" height="260" key="GridCell.Tab.0.right" timestamp="1575325165207">
+    <state width="1354" height="260" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407863536" />
+    <state width="1354" height="260" key="GridCell.Tab.0.right" timestamp="1575407863536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575325165207" />
+    <state width="1354" height="260" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407863536" />
+    <state width="1354" height="322" key="GridCell.Tab.1.bottom" timestamp="1575407720108">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1354" height="322" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407720108" />
+    <state width="1354" height="322" key="GridCell.Tab.1.center" timestamp="1575407720108">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1354" height="322" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407720108" />
+    <state width="1354" height="322" key="GridCell.Tab.1.left" timestamp="1575407720108">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1354" height="322" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407720108" />
+    <state width="1354" height="322" key="GridCell.Tab.1.right" timestamp="1575407720108">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1354" height="322" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407720108" />
     <state x="2226" y="136" width="1024" height="845" key="SettingsEditor" timestamp="1575325137422">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2226" y="136" width="1024" height="845" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575325137422" />
-    <state x="2517" y="264" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1575321515641">
+    <state x="2517" y="264" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1575407436949">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2517" y="264" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575321515641" />
+    <state x="2517" y="264" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575407436949" />
   </component>
 </project>
