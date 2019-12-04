@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905481a2-6cb0-4100-9b82-4ceda45495b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/day01/FuelCounterUpper.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/day01/FuelCounterUpper.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/day03/WireRoute.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/day03/WireRoute.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +59,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest" value="org.scalatest.FlatSpec" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="day03" />
       <recent name="day02" />
       <recent name="day1" />
     </key>
@@ -76,7 +78,20 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.IntCodeInterpreterTest">
+  <component name="RunManager" selected="Remote.Debug sbt shell">
+    <configuration name="Debug sbt shell" type="Remote" activateToolWindowBeforeRun="false">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="43085" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="43085" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="FuelCounterUpperTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="adventofcode2019" />
       <option name="allowRunningInParallel" value="false" />
@@ -117,8 +132,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WireRouteTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="adventofcode2019" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="day03.WireRouteTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.WireRouteTest" />
         <item itemvalue="ScalaTest.IntCodeInterpreterTest" />
         <item itemvalue="ScalaTest.FuelCounterUpperTest" />
       </list>
@@ -188,14 +224,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575490551765">
+    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575499678707">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575490551765" />
-    <state x="2201" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575323347376">
+    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575499678707" />
+    <state x="2201" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575501281151">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2201" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575323347376" />
+    <state x="2201" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501281151" />
     <state x="2471" y="345" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1575323346013">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -204,49 +240,60 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2485" y="302" width="495" height="513" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575324389250" />
-    <state width="1354" height="260" key="GridCell.Tab.0.bottom" timestamp="1575491295607">
+    <state width="1354" height="322" key="GridCell.Tab.0.bottom" timestamp="1575501530887">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575491295607" />
-    <state width="1354" height="260" key="GridCell.Tab.0.center" timestamp="1575491295607">
+    <state width="1354" height="322" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530887" />
+    <state width="1354" height="322" key="GridCell.Tab.0.center" timestamp="1575501530887">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575491295607" />
-    <state width="1354" height="260" key="GridCell.Tab.0.left" timestamp="1575491295607">
+    <state width="1354" height="322" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530887" />
+    <state width="1354" height="322" key="GridCell.Tab.0.left" timestamp="1575501530887">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575491295607" />
-    <state width="1354" height="260" key="GridCell.Tab.0.right" timestamp="1575491295607">
+    <state width="1354" height="322" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530887" />
+    <state width="1354" height="322" key="GridCell.Tab.0.right" timestamp="1575501530887">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="260" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575491295607" />
-    <state width="1354" height="322" key="GridCell.Tab.1.bottom" timestamp="1575489642251">
+    <state width="1354" height="322" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530887" />
+    <state width="1354" height="322" key="GridCell.Tab.1.bottom" timestamp="1575501530888">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="322" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489642251" />
-    <state width="1354" height="322" key="GridCell.Tab.1.center" timestamp="1575489642251">
+    <state width="1354" height="322" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530888" />
+    <state width="1354" height="322" key="GridCell.Tab.1.center" timestamp="1575501530888">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="322" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489642251" />
-    <state width="1354" height="322" key="GridCell.Tab.1.left" timestamp="1575489642251">
+    <state width="1354" height="322" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530888" />
+    <state width="1354" height="322" key="GridCell.Tab.1.left" timestamp="1575501530888">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="322" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489642251" />
-    <state width="1354" height="322" key="GridCell.Tab.1.right" timestamp="1575489642251">
+    <state width="1354" height="322" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530888" />
+    <state width="1354" height="322" key="GridCell.Tab.1.right" timestamp="1575501530888">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1354" height="322" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489642251" />
-    <state x="2226" y="136" width="1024" height="845" key="SettingsEditor" timestamp="1575325137422">
+    <state width="1354" height="322" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501530888" />
+    <state x="2226" y="136" width="1024" height="845" key="SettingsEditor" timestamp="1575500802467">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2226" y="136" width="1024" height="845" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575325137422" />
-    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1575485575761">
+    <state x="2226" y="136" width="1024" height="845" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575500802467" />
+    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1575501610071">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575485575761" />
-    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1575489222508">
+    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575501610071" />
+    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1575498777808">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489222508" />
+    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575498777808" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/day03/WireRoute.scala</url>
+          <line>50</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
