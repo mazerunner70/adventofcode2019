@@ -25,7 +25,7 @@ object FuelCounterUpper {
     Source.fromResource(filename).mkString
   }
   def main(args: Array[String]): Unit = {
-    val pageContent = loadFromFile("day1/input.txt")
+    val pageContent = loadFromFile("day01/input.txt")
     val list = pageContent.split('\n').map(_.toInt).toList
     val totalFuelForCargo = total(list)
     println(totalFuelForCargo)
