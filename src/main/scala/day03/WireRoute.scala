@@ -44,15 +44,24 @@ class WireRoute {
     routeB.contains(step)
   }
 
+  def getIntersections(routeStringA: String, routeStringB: String): (List[(Int, Int)], List[(Int, Int)], List[(Int, Int)]) = {
+    val wireAPath = calcWirePath(routeStringA)
+    val wireBPath = calcWirePath(routeStringB)
+    (wireAPath, wireBPath, intersectRoutes(wireAPath, wireBPath))
+  }
+
   def manhattenDistance(position: (Int, Int)): Int =
     math.abs(position._1) + math.abs(position._2)
 
-  def shortestIntersection(routeStringA: String, routeStringB: String) = {
-    val wireAPath = calcWirePath(routeStringA)
-    val wireBPath = calcWirePath(routeStringB)
-    val intersections = intersectRoutes(wireAPath, wireBPath)
+  def shortestIntersection(intersections: List[(Int, Int)]) =
     intersections.map(manhattenDistance).min
+
+  def shortestPath(wireAPath: List[(Int, Int)], wireBPath: List[(Int, Int)], intersections: List[(Int, Int)]): Int = {
+    def pathLength(position: (Int, Int)): Int =
+      wireAPath.indexOf(position) + wireBPath.indexOf(position)+2
+    intersections.map(pathLength).min
   }
+
 
 }
 
@@ -65,7 +74,12 @@ object WireRoute {
     val pageContent = loadFromFile("day03/input.txt")
     val routes = pageContent.split('\n').toList
     val wireRoute = new WireRoute()
-    val shortestDistance = wireRoute.shortestIntersection(routes(0), routes(1))
+    val (wireAPath, wireBPath, intersections) = wireRoute.getIntersections(routes(0), routes(1))
+
+    val shortestDistance = wireRoute.shortestIntersection(intersections)
     println(s"Day03 part 1 answer = $shortestDistance")
+    val shortestPath = wireRoute.shortestPath(wireAPath, wireBPath, intersections)
+    println(s"Day03 part 2 answer = $shortestPath")
+
   }
 }
