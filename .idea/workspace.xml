@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905481a2-6cb0-4100-9b82-4ceda45495b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/adventofcode2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/adventofcode2019.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/day05/IntCodeInterpreterV2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/day05/IntCodeInterpreterV2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/day05/Terminal.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/day05/Terminal.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="ScalaTest Class" />
         <option value="Python Script" />
+        <option value="ScalaTest Class" />
       </list>
     </option>
   </component>
@@ -58,6 +61,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest" value="org.scalatest.FlatSpec" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/day06" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,10 +69,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="day07" />
+      <recent name="day06" />
+      <recent name="day05" />
       <recent name="day04" />
       <recent name="day03" />
-      <recent name="day02" />
-      <recent name="day1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="day07" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/day06" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="org.scalatest.FlatSpec" />
@@ -78,7 +89,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="sbt Task.Day 05">
+  <component name="RunManager" selected="sbt Task.Day 07">
     <configuration name="Debug sbt shell" type="Remote" activateToolWindowBeforeRun="false">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -102,7 +113,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FuelCounterUpperTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="Day 06" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="&quot;runMain day06.OrbitMap&quot;" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day 07" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="&quot;runMain day07.AmplifierV2&quot;" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmplifierTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="adventofcode2019" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Class" />
@@ -114,7 +145,7 @@
       <option name="searchTest" value="Across module dependencies" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="day1.FuelCounterUpperTest" />
+      <option name="testClassPath" value="day07.AmplifierTest" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -122,7 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntCodeInterpreterTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="AmplifierTest.AmplifierTest should runAmplifierList" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="adventofcode2019" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Class" />
@@ -134,7 +165,8 @@
       <option name="searchTest" value="Across module dependencies" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="day02.IntCodeInterpreterTest" />
+      <option name="testClassPath" value="day07.AmplifierTest" />
+      <option name="testName" value="AmplifierTest should runAmplifierList" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -142,7 +174,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordCalculatorTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="AmplifierTest.AmplifierTest should runAmplifierList4" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="adventofcode2019" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Class" />
@@ -154,7 +186,8 @@
       <option name="searchTest" value="Across module dependencies" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="day04.PasswordCalculatorTest" />
+      <option name="testClassPath" value="day07.AmplifierTest" />
+      <option name="testName" value="AmplifierTest should runAmplifierList4" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -162,7 +195,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WireRouteTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="AmplifierV2Test" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="adventofcode2019" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Class" />
@@ -174,7 +207,27 @@
       <option name="searchTest" value="Across module dependencies" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="day03.WireRouteTest" />
+      <option name="testClassPath" value="day07.AmplifierV2Test" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntCodeInterpreterV2Test" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="adventofcode2019" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="day05.IntCodeInterpreterV2Test" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -185,17 +238,21 @@
     <list>
       <item itemvalue="Remote.Debug sbt shell" />
       <item itemvalue="sbt Task.Day 05" />
-      <item itemvalue="ScalaTest.FuelCounterUpperTest" />
-      <item itemvalue="ScalaTest.IntCodeInterpreterTest" />
-      <item itemvalue="ScalaTest.PasswordCalculatorTest" />
-      <item itemvalue="ScalaTest.WireRouteTest" />
+      <item itemvalue="sbt Task.Day 06" />
+      <item itemvalue="sbt Task.Day 07" />
+      <item itemvalue="ScalaTest.IntCodeInterpreterV2Test" />
+      <item itemvalue="ScalaTest.AmplifierTest" />
+      <item itemvalue="ScalaTest.AmplifierTest.AmplifierTest should runAmplifierList4" />
+      <item itemvalue="ScalaTest.AmplifierTest.AmplifierTest should runAmplifierList" />
+      <item itemvalue="ScalaTest.AmplifierV2Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.PasswordCalculatorTest" />
-        <item itemvalue="ScalaTest.WireRouteTest" />
-        <item itemvalue="ScalaTest.IntCodeInterpreterTest" />
-        <item itemvalue="ScalaTest.FuelCounterUpperTest" />
+        <item itemvalue="ScalaTest.AmplifierV2Test" />
+        <item itemvalue="ScalaTest.AmplifierTest.AmplifierTest should runAmplifierList" />
+        <item itemvalue="ScalaTest.AmplifierTest.AmplifierTest should runAmplifierList4" />
+        <item itemvalue="ScalaTest.AmplifierTest" />
+        <item itemvalue="ScalaTest.IntCodeInterpreterV2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -263,14 +320,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575724569874">
+    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575843560074">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575724569874" />
-    <state x="2201" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575731753977">
+    <state x="2476" y="317" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843560074" />
+    <state x="2375" y="229" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575843624429">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2201" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575731753977" />
+    <state x="2375" y="229" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843624429" />
+    <state x="2659" y="251" width="368" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1575831364660">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2659" y="251" width="368" height="599" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575831364660" />
     <state x="2471" y="345" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1575323346013">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -283,73 +344,67 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2485" y="302" width="495" height="513" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575324389250" />
-    <state width="1587" height="322" key="GridCell.Tab.0.bottom" timestamp="1575733232988">
+    <state width="1587" height="260" key="GridCell.Tab.0.bottom" timestamp="1575843629851">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232988" />
-    <state width="1587" height="322" key="GridCell.Tab.0.center" timestamp="1575733232988">
+    <state width="1587" height="260" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843629851" />
+    <state width="1587" height="260" key="GridCell.Tab.0.center" timestamp="1575843629851">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232988" />
-    <state width="1587" height="322" key="GridCell.Tab.0.left" timestamp="1575733232988">
+    <state width="1587" height="260" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843629851" />
+    <state width="1587" height="260" key="GridCell.Tab.0.left" timestamp="1575843629850">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232988" />
-    <state width="1587" height="322" key="GridCell.Tab.0.right" timestamp="1575733232988">
+    <state width="1587" height="260" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843629850" />
+    <state width="1587" height="260" key="GridCell.Tab.0.right" timestamp="1575843629851">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232988" />
-    <state width="1587" height="322" key="GridCell.Tab.1.bottom" timestamp="1575733232989">
+    <state width="1587" height="260" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843629851" />
+    <state width="1587" height="322" key="GridCell.Tab.1.bottom" timestamp="1575843114188">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232989" />
-    <state width="1587" height="322" key="GridCell.Tab.1.center" timestamp="1575733232989">
+    <state width="1587" height="322" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843114188" />
+    <state width="1587" height="322" key="GridCell.Tab.1.center" timestamp="1575843114188">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232989" />
-    <state width="1587" height="322" key="GridCell.Tab.1.left" timestamp="1575733232989">
+    <state width="1587" height="322" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843114188" />
+    <state width="1587" height="322" key="GridCell.Tab.1.left" timestamp="1575843114188">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232989" />
-    <state width="1587" height="322" key="GridCell.Tab.1.right" timestamp="1575733232989">
+    <state width="1587" height="322" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843114188" />
+    <state width="1587" height="322" key="GridCell.Tab.1.right" timestamp="1575843114188">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1587" height="322" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575733232989" />
+    <state width="1587" height="322" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575843114188" />
     <state x="2226" y="136" width="1024" height="845" key="SettingsEditor" timestamp="1575729498658">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2226" y="136" width="1024" height="845" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575729498658" />
-    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1575729870069">
+    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1575806432069">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575729870069" />
-    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1575575882704">
+    <state x="2647" y="357" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575806432069" />
+    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2" timestamp="1575842355104">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575575882704" />
+    <state x="3045" y="318" width="472" height="590" key="org.jetbrains.plugins.scala.testingSupport.ScalaTestCreator$$anon$1$$anon$2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575842355104" />
+    <state x="2514" y="270" width="672" height="678" key="search.everywhere.popup" timestamp="1575840328754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2514" y="270" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575840328754" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/day05/IntCodeInterpreterV2.scala</url>
-          <line>31</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/scala/day07/IntCodeInterpreterV3.scala</url>
+          <line>130</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/day05/IntCodeInterpreterV2.scala</url>
-          <line>34</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/day05/IntCodeInterpreterV2.scala</url>
-          <line>63</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/day05/IntCodeInterpreterV2.scala</url>
-          <line>59</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/main/scala/day07/PreemptiveMultiTasker.scala</url>
+          <line>21</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

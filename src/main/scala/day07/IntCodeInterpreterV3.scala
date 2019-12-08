@@ -1,10 +1,11 @@
-package day05
+package day07
 
-import scala.io.Source
+class IntCodeInterpreterV3(memory: Array[Int]) extends MtProcess {
 
-class IntCodeInterpreterV2(memory: Array[Int], terminal: Terminal) {
-
+  var terminal: MtTerminalImpl = _
   var programCounter = 0
+  var requiresInput = false
+  var isEnded = false
 
 
   def readAndAdvance(): Int = {
@@ -28,7 +29,7 @@ class IntCodeInterpreterV2(memory: Array[Int], terminal: Terminal) {
       5  -> instructionJumpIfTrue,
       6  -> instructionJumpIfFalse,
       7  -> instructionLessThan,
-      8 -> instructionEquals,
+      8  -> instructionEquals,
       99 -> instructionEnd)
 
     val opCode = readAndAdvance
@@ -59,7 +60,13 @@ class IntCodeInterpreterV2(memory: Array[Int], terminal: Terminal) {
     def operation = (x: Int, y: Int) => x * y
     doMath(params, parameterModes, operation)
   }
+
+
   def instructionInput(parameterModes: List[Char], params: List[Int]):Int = {
+    storeInstructionState(parameterModes, params)
+    2
+  }
+  def resumeInput(parameterModes: List[Char], params: List[Int]):Int = {
     val input = terminal.readInt()
     memory(params.head) = input
     0
@@ -69,6 +76,7 @@ class IntCodeInterpreterV2(memory: Array[Int], terminal: Terminal) {
     terminal.writeInt(output)
     0
   }
+
   def instructionJumpIfTrue(parameterModes: List[Char], params: List[Int]):Int = {
     val valueA = parameterValue(parameterModes.head, params.head)
     val location = parameterValue(parameterModes.tail.head, params.tail.head)
@@ -97,60 +105,29 @@ class IntCodeInterpreterV2(memory: Array[Int], terminal: Terminal) {
   }
   def instructionEnd(parameterModes: List[Char], params: List[Int]):Int = 1
 
+  var state_parameterModes: List[Char] = List()
+  var state_params: List[Int] = List()
+
+  def storeInstructionState(parameterModes: List[Char], params: List[Int]) = {
+    state_parameterModes = parameterModes
+    state_params = params
+  }
+
   def runProgram() = {
+    if (programCounter != 0) resumeInput(state_parameterModes, state_params)
     var result = 0
     while (result == 0)
     {
       val instruction = readNextInstruction
       result = instruction._1(instruction._2, instruction._3)
     }
+    isEnded = (result == 1)
   }
 
+  override def run(): Unit = {
+    runProgram()
+  }
 
-
+  override def checkCanRun(): Boolean = (!terminal.inputList.isEmpty || programCounter == 0) && !isEnded
 }
 
-object IntCodeInterpreterV2 {
-  def loadFromFile(filename:String): String = {
-    Source.fromResource(filename).mkString
-  }
-
-  def main(args: Array[String]): Unit = {
-    val pageContent = loadFromFile("day05/input.txt")
-    val array = pageContent.split(',').map(_.toInt).toArray
-    val terminal1 = new TerminalImpl(1)
-    runVm(array, terminal1)
-    println(s"Day05 answer part 1 ${terminal1.lastOutput}")
-    val terminal2 = new TerminalImpl(5)
-    runVm(array, terminal2)
-    println(s"Day05 answer part 2 ${terminal2.lastOutput}")
-
-  }
-
-  def day2DoubleCheck(): Unit = {
-    println(s"Started")
-    val pageContent = loadFromFile("day02/input.txt")
-    val array = pageContent.split(',').map(_.toInt).toArray
-    val terminal = new TerminalImpl(1)
-    val output = runVm(array, terminal, 12, 2)
-    println(s"Day02 answer double check: $output")
-  }
-
-  def runVm(memory: Array[Int], terminal: Terminal, noun: Int, verb: Int): Int = {
-    val memClone = memory.clone()
-    memClone(1) = noun
-    memClone(2) = verb
-    val intCodeInterpreterV2 = new IntCodeInterpreterV2(memClone, terminal)
-    intCodeInterpreterV2.runProgram()
-    memClone(0)
-  }
-
-  def runVm(memory: Array[Int], terminal: Terminal): Unit = {
-    val memClone = memory.clone()
-    val intCodeInterpreterV2 = new IntCodeInterpreterV2(memClone, terminal)
-    intCodeInterpreterV2.runProgram()
-
-  }
-
-
-}
