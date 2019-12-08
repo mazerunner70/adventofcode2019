@@ -69,16 +69,40 @@ object AmplifierV2 {
     Source.fromResource(filename).mkString
   }
 
-  def main(args: Array[String]): Unit = {
-    val pageContent = loadFromFile("day07/input.txt")
-    val memory = pageContent.split(',').map(_.toInt).toArray
-    val config = List(9,7,8,5,6)
+  def createAllPermutations(list: List[Int]): List[List[Int]] = list.permutations.toList
+
+  def calculateAllThrusts(memory: Array[Int], thrustPerms: List[List[Int]]): List[Int] = {
+    thrustPerms match {
+      case phaseSetting :: tail => {
+        val outputSignal = executeVmSet(memory, phaseSetting)
+        outputSignal :: calculateAllThrusts(memory, tail)
+      }
+      case Nil                  => Nil
+    }
+  }
+
+  def doCalculation(memory: Array[Int] ): Int = {
+    val phaseSettings = List(5, 6, 7, 8, 9)
+    val possiblePermutations = createAllPermutations(phaseSettings)
+    calculateAllThrusts(memory, possiblePermutations).max
+  }
+
+  def executeVmSet(memory: Array[Int], config: List[Int]): Int = {
     val amplifierv2 = new AmplifierV2
     val vms = amplifierv2.constructVmSet(memory, config)
     val multitasker = new PreemptiveMultiTasker
     amplifierv2.attachVmsToMultiTasker(multitasker, vms)
     amplifierv2.setInitialInputSignal(0, vms)
     multitasker.run()
+    println(s"-----${vms.last.terminal.lastOutput}")
+    vms.last.terminal.lastOutput
+  }
 
+  def main(args: Array[String]): Unit = {
+    val pageContent = loadFromFile("day07/input.txt")
+    val memory = pageContent.split(',').map(_.toInt).toArray
+    val config = List(9,7,8,5,6)
+    val result = doCalculation(memory)
+    println(s"day 7 part 2 answer: $result")
   }
 }
