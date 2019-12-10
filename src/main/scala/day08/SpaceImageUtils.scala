@@ -25,6 +25,15 @@ class SpaceImageUtils {
     }
   }
 
+  def calculateFinalImage(layers: List[String]): String = {
+    val transposed = layers.transpose
+    val image = transposed.map(_.find(_ != '2').getOrElse('2'))
+    image.mkString
+  }
+
+  def visualise(image: String, width: Int, height: Int): Unit = {
+    println(image.grouped(width).mkString("\n").replaceAllLiterally("0", " "))
+  }
 
 }
 
@@ -43,5 +52,7 @@ object SpaceImageUtils {
     val layer = spaceImageUtils.getLayerWithLeastZero(layers)
     val answer = layer.count(_ == '1') * layer.count(_ == '2')
     println(s"Day 08 part 1 answer: $answer")
+    println(s"Day 08 part 2 answer: ${spaceImageUtils.calculateFinalImage(layers)}")
+    println(spaceImageUtils.visualise(spaceImageUtils.calculateFinalImage(layers), 25, 6))
   }
 }
