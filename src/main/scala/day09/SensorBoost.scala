@@ -31,6 +31,15 @@ object SensorBoost {
     console.inputList.enqueue(1)
     preemptiveMultiTasker.run()
     println(s"day 09 part 1 answer: ${console.lastOutput.getOrElse(-11111)}")
+    println(s"day 09 part 2 answer: ${part2(memory)}")
+  }
+
+  def part2(memory:ArrayBuffer[Long]): Long = {
+    val sensorBoost = new SensorBoost
+    val (preemptiveMultiTasker, console) = sensorBoost.runOneProcess(memory)
+    console.inputList.enqueue(2)
+    preemptiveMultiTasker.run()
+    console.lastOutput.getOrElse(-11111)
   }
 
 }

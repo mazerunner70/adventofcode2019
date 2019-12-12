@@ -24,7 +24,7 @@ class IntCodeInterpreterV4(memory: Memory) extends MtProcess {
 
     val opCode = memory.readAndAdvance
     val paramCount = paramCounts(opCode.toInt % 100)
-    val parameterModes: List[Char] = (opCode.toString.reverse+("0" * (paramCount+2))).substring(2).toList
+    val parameterModes: List[Char] = ((opCode / 100).toString.reverse+("0" * (paramCount))).substring(0, paramCount).toList
     val params = memory.readAndAdvance(paramCount)
     println(s"debug: $opCode:$paramCount:$params")
     (instructionSet(opCode.toInt % 100), parameterModes, params)
@@ -45,7 +45,8 @@ class IntCodeInterpreterV4(memory: Memory) extends MtProcess {
   def doMath(params: List[Long], parameterModes: List[Char], operation: (Long, Long)=>Long): Int = {
     val valueA = nonMemParameterValue(parameterModes.head, params.head)
     val valueB = nonMemParameterValue(parameterModes.tail.head, params.tail.head)
-    memory.poke(memParameterValue(parameterModes.last, params.last), operation(valueA, valueB))
+    val address = memParameterValue(parameterModes.last, params.last)
+    memory.poke(address, operation(valueA, valueB))
     0 // instruction successful
   }
 
@@ -76,13 +77,13 @@ class IntCodeInterpreterV4(memory: Memory) extends MtProcess {
 
   def instructionJumpIfTrue(parameterModes: List[Char], params: List[Long]):Int = {
     val valueA = nonMemParameterValue(parameterModes.head, params.head)
-    val newAddress = memParameterValue(parameterModes.tail.head, params.tail.head)
+    val newAddress = nonMemParameterValue(parameterModes.tail.head, params.tail.head).toInt
     if (valueA != 0) memory.jumpToAddress(newAddress)
     0
   }
   def instructionJumpIfFalse(parameterModes: List[Char], params: List[Long]):Int = {
     val valueA = nonMemParameterValue(parameterModes.head, params.head)
-    val newAddress = memParameterValue(parameterModes.tail.head, params.tail.head)
+    val newAddress = nonMemParameterValue(parameterModes.tail.head, params.tail.head).toInt
     if (valueA == 0) memory.jumpToAddress(newAddress)
     0
   }
