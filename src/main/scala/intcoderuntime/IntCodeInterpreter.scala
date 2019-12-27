@@ -3,7 +3,6 @@ package intcoderuntime
 class IntCodeInterpreter(memory: Memory) extends MtProcess {
 
   var console: Console = _
-  var requiresInput = false
   var ended = false
 
   def isEnded(): Boolean = ended
@@ -26,7 +25,7 @@ class IntCodeInterpreter(memory: Memory) extends MtProcess {
     val paramCount = paramCounts(opCode.toInt % 100)
     val parameterModes: List[Char] = ((opCode / 100).toString.reverse+("0" * (paramCount))).substring(0, paramCount).toList
     val params = memory.readAndAdvance(paramCount)
-    println(s"debug: $opCode:$paramCount:$params")
+//    println(s"debug: $opCode:$paramCount:$params")
     (instructionSet(opCode.toInt % 100), parameterModes, params)
   }
 

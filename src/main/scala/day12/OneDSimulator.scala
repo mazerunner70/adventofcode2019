@@ -2,7 +2,6 @@ package day12
 
 import common.SourceAware
 
-import scala.annotation.tailrec
 import scala.util.matching.Regex
 
 class OneDSimulator() {
